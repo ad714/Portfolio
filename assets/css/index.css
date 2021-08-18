@@ -184,30 +184,14 @@ body {
 #middle table tr td {
     text-align:center;
 }
-.social {
-    color:#fff;
-    font-size:22px;
-    border-radius:50%;
-    transition:0.4s ease-in-out;
-    margin:0px 8px;
-    text-align:center;
-}
-.social:hover { 
-    cursor: pointer;
-    color:rgb(255, 50, 50);
-}
 .contact {
     color:#fff;
-    font-size:22px;
+    font-size:38px;
     border-radius:50%;
     transition:0.4s ease-in-out;
     margin:0px 8px;
     text-align:center;
-    text-decoration:none; 140000
-}
-.contact:hover { 
-    cursor: pointer;
-    color:rgb(155, 50, 50);
+    text-decoration:none;
 }
 .container {
     width:90vw;
@@ -270,19 +254,12 @@ body {
 } a:hover{
     color:#f00606;
 }
-#used div{
-    font-size:14px !important;
-    display:inline-block;
-    padding:8px 10px;
-    border:2px solid #fff;
-    margin:0px 10px;
-    border-radius:50px;
+.icon {
+    color:#ffff;
 }
-#used:hover {
-    cursor:text;
-}
-#used div:hover {
-    cursor:text;
+.icon:hover { 
+    cursor:pointer;
+    color:rgb(255, 50, 50);
 }
 .container h1 {
     font-size:60px;
