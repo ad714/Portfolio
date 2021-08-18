@@ -9,8 +9,8 @@ body {
     height:100vh;
     overflow:hidden;
     font-family: 'Noto Sans', sans-serif;
-    -webkit-animation: gradient 15s ease infinite;
-	        animation: gradient 15s ease infinite;
+    -webkit-animation: gradient 8s ease infinite;
+	        animation: gradient 8s ease infinite;
 }
 @-webkit-keyframes gradient {
 	0% {
@@ -84,9 +84,13 @@ body {
     padding-bottom:10vh;
 }
 #middle h1 {
-    color:rgb(255, 50, 50);
-    font-size:70px;
-    text-decoration:underline;
+    font-size:94px;
+    background:-webkit-linear-gradient(-45deg, #ff0000, #e60000, #ff3300, #ff1a1a) center center;
+    background-size:50% 50%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    -webkit-animation: gradient 10s cubic-bezier(.77,0,.18,1) infinite;
+	        animation: gradient 10s cubic-bezier(.77,0,.18,1) infinite;
 }
 #about {
     width:10vw;
@@ -173,6 +177,7 @@ body {
     background:rgba(255,50,50,0.9);
     cursor:pointer;
 }
+
 #contact:hover {
     background:rgba(255,50,50,0.9);
     cursor:pointer;
@@ -331,12 +336,6 @@ body {
     }
     #middle table {
         width:80%;
-    }
-    .container form input {
-        width:90%;
-    }
-    .container form textarea {
-        width:90%;
     }
     #menu {
         display:inline-block;
