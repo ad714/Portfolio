@@ -212,7 +212,7 @@ body {
 }
 .container div {
     font-size:25px;
-    margin:20px 0px;
+    margin:15px 15px;
     transition:0.4s ease-in-out;
 }
 .container div:hover {
@@ -220,28 +220,6 @@ body {
 }
 .container section {
     margin:8vh 0px;
-}
-.sbox {
-    width:38%;
-    border:2px solid #f00606;
-    border-radius:15px;
-    padding:50px;
-}
-.sbox.right {
-    float:right;
-}
-.sbox.left {
-    float:left;
-}
-.sbox.center {
-    width:90%;
-    float:left;
-}
-.sbox a{
-    text-decoration:none;
-    color:white;
-} a:hover{
-    color:#f00606;
 }
 .rbox {
     width:90%;
@@ -254,6 +232,27 @@ body {
     height:25%;
 }
 .rbox a{
+    text-decoration:none;
+    color:white;
+} a:hover{
+    color:#f00606;
+}
+.row{
+    display:flex;
+    justify-content:flex-start;
+    align-items:stretch;
+    flex-wrap:nowrap;
+    padding:10px;
+}
+.cell{
+    min-height:75px;
+    flex-grow:1;
+    flex-basis:100%;
+    border:2px solid #f00606;
+    border-radius:15px;
+    padding:50px;
+}
+.cell a{
     text-decoration:none;
     color:white;
 } a:hover{
@@ -343,16 +342,7 @@ body {
     #onlywide {
         display:none !important;
     }
-    .sbox.left {
-        float:none;
-        width:80%;
-    }
-    .sbox.right {
-        float:none;
-        width:80%;
-    }
-    .sbox.center {
-        float:none;
-        width:80%;
-    }
+    .row{
+    flex-wrap:wrap;
+  }
 }
