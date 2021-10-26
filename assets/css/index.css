@@ -149,21 +149,21 @@ body {
     border-radius:0px 0px 100px 100px;
 }
 #contact {
-    width:10vw;
-    height:10vw;
+    width:15vw;
+    height:4vw;
     text-align:center;
     font-size:25px;
     background:transparent;
     color:#fff;
     position:fixed;
     bottom:0;
-    left:45vw;
+    left:42vw;
     display:flex;
     flex-direction: column;
     justify-content:center;
     z-index:4;
     transition:0.4s ease-in-out;
-    border-radius:100px 100px 0px 0px;
+    border-radius:25px 25px 0px 0px;
 }
 #about:hover {
     background:rgba(255,50,50,0.9);
