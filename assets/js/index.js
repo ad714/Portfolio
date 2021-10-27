@@ -12,6 +12,20 @@ function closeabout(){
         $("#about_container").css("display","none");
     },800);
 }
+function showblog(){
+    $("#blog_container").css("display","inherit");
+    $("#blog_container").addClass("animated slideInLeft");
+    setTimeout(function(){
+        $("#blog_container").removeClass("animated slideInLeft");
+    },800);
+}
+function closeblog(){
+    $("#blog_container").addClass("animated slideOutLeft");
+    setTimeout(function(){
+        $("#blog_container").removeClass("animated slideOutLeft");
+        $("#blog_container").css("display","none");
+    },800);
+}
 function showwork(){
     $("#work_container").css("display","inherit");
     $("#work_container").addClass("animated slideInRight");
