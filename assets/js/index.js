@@ -13,18 +13,13 @@ function closeabout(){
     },800);
 }
 function showblog(){
-    $("#blog_container").css("display","inherit");
-    $("#blog_container").addClass("animated slideInLeft");
-    setTimeout(function(){
-        $("#blog_container").removeClass("animated slideInLeft");
-    },800);
+   window.open("pages/blog.html", "_self");
 }
 function closeblog(){
-    $("#blog_container").addClass("animated slideOutLeft");
-    setTimeout(function(){
-        $("#blog_container").removeClass("animated slideOutLeft");
-        $("#blog_container").css("display","none");
-    },800);
+    window.open("../index.html", "_self");
+}
+function closeBlogPost(){
+    window.open("../blog.html", "_self");
 }
 function showwork(){
     $("#work_container").css("display","inherit");

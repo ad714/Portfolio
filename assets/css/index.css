@@ -284,6 +284,13 @@ body {
     cursor:pointer;
     color:rgb(255, 50, 50);
 }
+#button {
+    color:#fff;
+}
+#button:hover { 
+    cursor:pointer;
+    color:rgb(255, 50, 50);
+}
 .container h1 {
     font-size:60px;
     text-decoration:underline;
