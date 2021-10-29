@@ -3,7 +3,7 @@
 body {
     padding:0px;
     margin:0px;
-    background:linear-gradient(-45deg, #140000, #380000, #3d0000, #610000) center center;
+    background:linear-gradient(-45deg, #000000, #000000, #330101, #330101) center center;
     background-size:400% 400%;
     width:100vw;
     height:100vh;
@@ -38,7 +38,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background:rgb(255, 50, 50);
+    background:#330101;
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@ body {
     width:50px;
     height:50px;
     border:12px solid #fff;
-    border-bottom:12px solid rgb(255, 50, 50);
+    border-bottom:12px solid #330101;
     border-radius:50%;
     margin:0;
 }
@@ -84,13 +84,8 @@ body {
     padding-bottom:10vh;
 }
 #middle h1 {
-    font-size:94px;
-    background:-webkit-linear-gradient(-45deg, #ff0000, #e60000, #ff3300, #ff1a1a) center center;
-    background-size:50% 50%;
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    -webkit-animation: gradient 10s cubic-bezier(.77,0,.18,1) infinite;
-	        animation: gradient 10s cubic-bezier(.77,0,.18,1) infinite;
+    font-size:76px;
+    text-decoration:underline;
 }
 #about {
     width:10vw;
@@ -226,7 +221,7 @@ body {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background:rgb(255, 50, 50);
+    background:#330101;
     color:#fff;
     z-index:9;
     position:fixed;
