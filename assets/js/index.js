@@ -15,15 +15,7 @@ function closeabout() {
 }
 
 function showblog() {
-	window.open("pages/blog.html", "_self");
-}
-
-function closeblog() {
-	window.open("../index.html", "_self");
-}
-
-function closeBlogPost() {
-	window.open("../blog.html", "_self");
+	window.open("https://charlie-117.github.io/blog/");
 }
 
 function showwork() {
