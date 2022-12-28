@@ -35,19 +35,7 @@ function closework() {
 }
 
 function showresume() {
-	$("#resume_container").css("display", "inherit");
-	$("#resume_container").addClass("animated slideInRight");
-	setTimeout(function() {
-		$("#resume_container").removeClass("animated slideInRight");
-	}, 400);
-}
-
-function closeresume() {
-	$("#resume_container").addClass("animated slideOutRight");
-	setTimeout(function() {
-		$("#resume_container").removeClass("animated slideOutRight");
-		$("#resume_container").css("display", "none");
-	}, 400);
+	window.open("https://drive.google.com/file/d/1Y3wattQqMO_Fhj6q77-Ph1xmt6m75C_G/view?usp=share_link");
 }
 
 function showcontact() {
