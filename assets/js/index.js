@@ -35,7 +35,7 @@ function closework() {
 }
 
 function showresume() {
-	window.open("https://drive.google.com/file/d/1SLM4gh9Y-Gdrq7LgGN2tWMjVp0blAuk6/view");
+	window.open("https://drive.google.com/file/d/1g-5OOfci9912llX4u1ENBXro80TyLS9R/view");
 }
 
 function showcontact() {
