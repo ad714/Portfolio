@@ -293,7 +293,7 @@ code {
 
 @keyframes boom {
 	from {
-		transform: rotate(-36deg);
+		transform: rotate(36deg);
 	}
 
 	to {
