@@ -1,0 +1,100 @@
+@font-face { font-family: Nippo; src: url('./lib/fonts/nippo-500-normal.woff2') format('woff2'); font-weight: 500; font-display: swap; }
+@font-face { font-family: Nippo; src: url('./lib/fonts/nippo-700-normal.woff2') format('woff2'); font-weight: 700; font-display: swap; }
+@font-face { font-family: Ranade; src: url('./lib/fonts/ranade-400-normal.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: Ranade; src: url('./lib/fonts/ranade-500-normal.woff2') format('woff2'); font-weight: 500; font-display: swap; }
+@font-face { font-family: Ranade; src: url('./lib/fonts/ranade-700-normal.woff2') format('woff2'); font-weight: 700; font-display: swap; }
+@font-face { font-family: Manjari; src: url('./lib/fonts/manjari-mark.woff2') format('woff2'); font-weight: 700; font-display: block; }
+
+:root {
+	--ground: #fff;
+	--ink: #0a0a0a;
+	--muted: #5c5c5c;
+	--line: #d6d6d6;
+	--comp: #efefef;
+	--comp-hover: #e4e4e4;
+	--band: #000;
+	--band-ink: #fff;
+	--band-muted: #a3a3a3;
+	--wm: #d4d4d4;
+	--display: Nippo, system-ui, sans-serif;
+	--text: Ranade, system-ui, sans-serif;
+	--ease: cubic-bezier(0.16, 1, 0.3, 1);
+	--move: cubic-bezier(0.65, 0, 0.35, 1);
+	color-scheme: light;
+}
+:root.night {
+	--ground: #000;
+	--ink: #fff;
+	--muted: #a3a3a3;
+	--line: #2e2e2e;
+	--comp: #000;
+	--comp-hover: #141414;
+	--wm: #2b2b2b;
+	color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html, body { overflow-x: clip; }
+body {
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	background: var(--ground);
+	color: var(--ink);
+	font: 400 17px/1.55 var(--text);
+	font-variant-numeric: tabular-nums;
+	-webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+img, video { max-width: 100%; display: block; }
+::selection { background: var(--ink); color: var(--ground); }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 2px; }
+
+.wrap { width: 100%; max-width: 1040px; margin: 0 auto; padding: 0 20px; position: relative; isolation: isolate; }
+@media (min-width: 720px) { .wrap { padding: 0 24px; } }
+
+.skip { position: absolute; left: 12px; top: -60px; z-index: 10; background: var(--ink); color: var(--ground); padding: 8px 14px; border-radius: 4px; }
+.skip:focus { top: 12px; }
+
+.sec { font: 500 clamp(1.6rem, 1.2rem + 1.4vw, 2rem)/1.05 var(--display); letter-spacing: -0.01em; margin: 72px 0 20px; }
+@media (min-width: 720px) { .sec { margin-top: 96px; } }
+
+.muted { color: var(--muted); }
+.more { display: inline-block; margin-top: 18px; font-weight: 500; text-decoration: underline; text-underline-offset: 4px; }
+.more:hover { text-decoration-thickness: 2px; }
+
+.comp { background: var(--comp); border-radius: 4px; }
+:root.night .comp { outline: 1px solid var(--line); outline-offset: -1px; }
+.inv { background: #000; color: #fff; border-radius: 4px; --muted: #a3a3a3; }
+:root.night .inv { outline: 1px solid #fff; outline-offset: -1px; }
+
+.wm {
+	position: absolute;
+	z-index: -1;
+	font: 700 clamp(12rem, 42vw, 34rem)/0.8 var(--display);
+	letter-spacing: -0.04em;
+	color: transparent;
+	-webkit-text-stroke: 1.5px var(--wm);
+	pointer-events: none;
+	user-select: none;
+	white-space: nowrap;
+}
+
+.prose { max-width: 38rem; }
+.prose > * + * { margin-top: 1.1em; }
+.prose h2 { font: 500 1.5rem/1.15 var(--display); margin-top: 2em; }
+.prose h3 { font: 500 1.2rem/1.2 var(--display); margin-top: 1.6em; }
+.prose a { text-decoration: underline; text-underline-offset: 3px; }
+.prose ul, .prose ol { padding-left: 1.2em; }
+.prose li + li { margin-top: 0.4em; }
+.prose code { font-size: 0.92em; background: var(--comp); padding: 1px 5px; border-radius: 3px; }
+:root.night .prose code { background: #1a1a1a; }
+.prose pre { background: #000; color: #fff; padding: 16px 18px; border-radius: 4px; overflow-x: auto; font-size: 14px; line-height: 1.5; }
+.prose pre code { background: none; padding: 0; }
+.prose blockquote { padding-left: 16px; border-left: 3px solid var(--ink); color: var(--muted); }
+.prose img { border-radius: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
