@@ -1,0 +1,244 @@
+{
+	"updated": "2026-10-28",
+	"sections": [
+		{
+			"title": "Summary",
+			"entries": [
+				{
+					"title": "Full-stack developer (React, TypeScript, Python, React Native) currently building an AI-based photo delivery platform at Snapshareai. Independently designed, shipped and operated PlayON, a World Cup prediction platform that ran in production for a full tournament with 271 active users and 94k page views (React 19 + Supabase). Other recent work spans a prediction-market arbitrage terminal and a high-frequency decision engine over live exchange orderbooks (Python, WebSockets, FastAPI).",
+					"date": "",
+					"lines": [],
+					"items": []
+				}
+			]
+		},
+		{
+			"title": "Experience",
+			"entries": [
+				{
+					"title": "Full Stack Developer, Snapshareai (Remote)",
+					"date": "Jan 2026 to Present",
+					"lines": [],
+					"items": [
+						{
+							"text": "Promoted from Intern (Jan to Mar 2026) to full-time Full Stack Developer (Apr 2026 to present).",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Building features for an AI-based photo delivery platform: event-based image data management and structured API workflows.",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Handling state management and data consistency across product modules.",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Built CRM modules (Clients and Jobs) for structured handling of event data, client management, and job lifecycle flows.",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Developed frontend features and reusable UI components improving gallery interactions, responsiveness and layout consistency across core product screens.",
+							"date": "",
+							"detail": ""
+						}
+					]
+				},
+				{
+					"title": "Freelance / Contract (alongside full-time work)",
+					"date": "",
+					"lines": [],
+					"items": [
+						{
+							"text": "Xattica Gaming Zone, Full Stack & Mobile Developer",
+							"date": "Sep 2026 to Present",
+							"detail": "Maintain a live Android app and website for a gaming venue client, rebuilt on React Native/Expo and Supabase (FCM push, Sentry, Cloudflare Workers)."
+						},
+						{
+							"text": "Boolean Technologies (Self-employed), Full Stack Developer",
+							"date": "Oct to Dec 2025",
+							"detail": "Built and delivered a website for a computer hardware retail store client (PHP, MySQL)."
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Skills",
+			"entries": [
+				{
+					"title": "Programming Languages: TypeScript, JavaScript, Python, PHP, Dart, Solidity, Java, C, C++, HTML, CSS",
+					"date": "",
+					"lines": [
+						"Frontend: React (18/19), Next.js, Vite, Tailwind CSS, React Native (Expo), Flutter",
+						"Backend: FastAPI, Flask, REST APIs, WebSockets, Supabase (Postgres, RLS, Edge Functions), Firebase, Redis (caching), MySQL",
+						"Blockchain: Solidity, Hardhat, Ethers.js, Web3.js, BNB Chain (testnet), wallet integration",
+						"DevOps/Tools: Git, GitHub Actions, Docker, Vercel, Selenium, Android Studio",
+						"APIs: Binance WebSocket, Polymarket, Fliq, RailRadar, Google Maps, Overpass, Gemini, Football-Data",
+						"Languages : English, Malayalam, Tamil, Hindi"
+					],
+					"items": []
+				}
+			]
+		},
+		{
+			"title": "Projects",
+			"entries": [
+				{
+					"title": "PlayON: World Cup Prediction Platform",
+					"date": "Jun to Jul 2026",
+					"lines": [
+						"Live: https://play-on-xi.vercel.app, (private repo)"
+					],
+					"items": [
+						{
+							"text": "Built, shipped and operated a FIFA World Cup 2026 prediction platform that ran live for the entire tournament: 271 players across 48 country crews logged 21,506 match predictions and 37,712 daily-quiz answers across all 104 fixtures, driving 8.4k visitors and 94k page views.",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Ran six concurrent game modes off one Postgres scoring engine: a recompute_scores() SQL function fired by a pg_cron heartbeat after each fixture sync pulled by a Deno Edge Function.",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Enforced deadlines and prediction privacy in the database rather than the client, via Row Level Security and SECURITY DEFINER RPCs that hide crowd statistics until kickoff (anti-herding).",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Worked around the absence of a paid live-sports API with a browser userscript that scraped in-play match pages and posted results into the app, scoring fantasy standings in real time mid-match.",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Tech: React 19, React Router 7, Vite, Supabase (Postgres, RLS, Deno Edge Functions), Vercel.",
+							"date": "",
+							"detail": ""
+						}
+					]
+				},
+				{
+					"title": "Hercules: Prediction-Market Arbitrage Dashboard",
+					"date": "Jan to Feb 2026",
+					"lines": [
+						"GitHub: https://github.com/ad714/hercules"
+					],
+					"items": [
+						{
+							"text": "Built a real-time React 18 + TypeScript (Vite 7) terminal that monitors live Fliq prediction markets and cross-references 1,000+ Polymarket assets to surface cross-platform arbitrage opportunities.",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Integrated Gemini 1.5 Flash to semantically verify market pairings, plus category grouping, noise filtering and a payoff simulator.",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Tech: React 18, TypeScript, Vite, REST APIs, Gemini API.",
+							"date": "",
+							"detail": ""
+						}
+					]
+				},
+				{
+					"title": "Fliq-Arb and fliqr: High-Frequency Arbitrage Engine",
+					"date": "Dec 2025 to Jan 2026",
+					"lines": [
+						"GitHub: https://github.com/ad714/Fliq-Arb"
+					],
+					"items": [
+						{
+							"text": "Engineered a Python decision engine linking live Binance BTC/USDT prices (WebSocket) to Fliq prediction-market orderbooks, with a FastAPI monitoring dashboard and full trade telemetry.",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Implemented VWAP-based entry pricing, a momentum-persistence guard against false breakouts, and competitor-bot detection via orderbook analysis.",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Built fliqr, a Dockerized GitHub Actions cron service that continuously ingests newly listed markets.",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Tech: Python, FastAPI, WebSockets, Docker, GitHub Actions.",
+							"date": "",
+							"detail": ""
+						}
+					]
+				},
+				{
+					"title": "WACA Predict: Cricket League Analytics",
+					"date": "Jul to Aug 2026",
+					"lines": [
+						"GitHub: https://github.com/ad714/waca-predict"
+					],
+					"items": [
+						{
+							"text": "Wrote a stdlib-only Python parser that decodes hand-cricket scorecards from unstructured WhatsApp exports, recovering 895 matches, 1,264 players and 38,000+ ball-by-ball events; resolved player identities across aliases and nicknames.",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Shipped the analytics dashboard as a dependency-free single-file HTML app with phone-number masking in the public build.",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Tech: Python (stdlib only), CSV data pipeline, single-file HTML/JS.",
+							"date": "",
+							"detail": ""
+						}
+					]
+				},
+				{
+					"title": "Railway Gate Tracker (V2)",
+					"date": "May 2025 to Aug 2026",
+					"lines": [
+						"GitHub: https://github.com/ad714/railway-gate-tracker"
+					],
+					"items": [
+						{
+							"text": "Rearchitected a safety app predicting railway level-crossing closures along a driver's route from live train positions, replacing the V1 Selenium scraper with the RailRadar REST API and implementing haversine route-to-gate matching and ETA-based gate-occupancy prediction.",
+							"date": "",
+							"detail": ""
+						},
+						{
+							"text": "Tech: React Native (Expo), TypeScript, Python, FastAPI, Google Maps API, Overpass API.",
+							"date": "",
+							"detail": ""
+						}
+					]
+				},
+				{
+					"title": "Earlier: Onchain SIP, a Next.js + Solidity investment DApp on BNB Chain testnet (Jul to Aug 2025); Travel Token, a Flutter + Firebase expense splitter (Nov 2024).",
+					"date": "",
+					"lines": [],
+					"items": []
+				}
+			]
+		},
+		{
+			"title": "Education",
+			"entries": [
+				{
+					"title": "MCA (Master of Computer Applications), College of Engineering Chengannur, 2023 to 2025, CGPA: 7.63",
+					"date": "",
+					"lines": [
+						"BCA (Bachelor of Computer Applications), College of Applied Sciences, Adoor, 2020 to 2023, CGPA: 7.15",
+						"UGC NET (Computer Science and Applications), December 2025, Qualified for Ph.D.",
+						"Certification: NPTEL Blockchain and Its Applications, 2024"
+					],
+					"items": []
+				}
+			]
+		}
+	]
+}
